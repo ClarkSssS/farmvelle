@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend><b>How To Play</b></legend>
+                Welcome to FarmVille!<br>
+                For starters, you have a lot of options to plant inside the fields,
+                the fields are the grids where you can drag and drop the plants.<br>The Field has its label
+                Vegetables, Fruits and Seeds, Guess which color of the field is the right field for each crop.
+                <br>Green = Vegetables, Pink = Fruits, Brown = Seeds
+            </fieldset>
+        </form>
+    </main>
+    
+    <div id="fields-container">
+    <!-- Add categories to the fields -->
+<div class="field" id="field1" data-category="vegetables" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field2" data-category="fruits" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field3" data-category="fruits" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field4" data-category="seeds" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field5" data-category="vegetables" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field6" data-category="seeds" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field7" data-category="fruits" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field8" data-category="seeds" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field9" data-category="fruits" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="field" id="field10" data-category="vegetables" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<!-- Add more fields with different categories as needed -->
+    </div>
+
+    <div id="crops-container">
+<!-- Add categories to the crops -->
+<div class="crop" id="crop1" data-category="vegetables" draggable="true"></div>
+<div class="crop" id="crop2" data-category="vegetables" draggable="true"></div>
+<div class="crop" id="crop3" data-category="seeds" draggable="true"></div>
+<div class="crop" id="crop4" data-category="seeds" draggable="true"></div>
+<div class="crop" id="crop5" data-category="fruits" draggable="true"></div>
+<div class="crop" id="crop6" data-category="fruits" draggable="true"></div>
+<div class="crop" id="crop7" data-category="vegetables" draggable="true"></div>
+<div class="crop" id="crop8" data-category="seeds" draggable="true"></div>
+<div class="crop" id="crop9" data-category="vegetables" draggable="true"></div>
+<div class="crop" id="crop10" data-category="vegetables" draggable="true"></div>
+<!-- Add more crops with different categories as needed -->
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
